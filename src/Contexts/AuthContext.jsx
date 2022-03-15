@@ -15,7 +15,7 @@ export const AuthContextProvider=({children})=>{
   }
 
   const handleAuth=()=>{
-      axios.post("https://reqres.in/api/users", data).then((res)=>{
+      axios.post("https://reqres.in/api/users", data).then((res)=>{  // used reqres api
           if(res){
               setUserData(data);
               setAuth(!isAuth);
